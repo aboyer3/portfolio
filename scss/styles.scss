@@ -593,23 +593,39 @@ footer {
     border: 1px solid $border;
     text-align: left;
 
-    h3 {
-        font-weight: 500;
-        float: left;
-        margin: 0;
-        color: $heading;
-    }
+    #beaver-image {
+      float:right;
+      max-width: 200px;
+
+      }
+      #buckeye-image {
+        margin-top: -55px;
+        float:right;
+        max-width: 150px;
+        padding-top: 0px;
+
+
+        }
 
     span {
         color: $text;
         float: right;
     }
 
+    h3 {
+        font-weight: 500;
+        float: left;
+        margin: 0;
+        color: $heading;
+    }
     h4 {
         color: $text;
         clear: both;
         font-weight: 500;
-        margin: 0 0 15px 0;
+        margin: 0 0 0 0;
+    }
+    #minor-text{
+      margin: 0 0 15px 0;
     }
 
     p, ul {
@@ -619,7 +635,14 @@ footer {
     }
 
     ul {
-        padding: 0 0 0 15px;
+
+        padding: 30px 0 0 15px;
+    }
+    #relevant-courses{
+      margin: 0 0 15px 0;
+    }
+    #second-ul{
+      padding: 0 0 0 15px;
     }
 }
 
