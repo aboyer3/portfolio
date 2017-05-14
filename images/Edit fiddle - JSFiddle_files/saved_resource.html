@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://fiddle.jshell.net/_display/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  
+  
+
+  
+  
+  
+
+  
+
+  <script type="text/javascript" src="./dummy.js"></script>
+
+  
+
+  
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="./result-light.css">
+  
+
+  
+    
+      <script type="text/javascript" src="./js"></script>
+    
+  
+
+  <style type="text/css">
+    html, body, #map-canvas {
+    height: 100%;
+    margin: 0px;
+    padding: 0px
+}
+  </style>
+
+  <title></title>
+
+  
+    
+
+
+
+
+<script type="text/javascript">//<![CDATA[
+
+var myLayer = L.mapbox.featureLayer()
+  .loadURL('assets/geoJSON/ES_BOUNDS_1617.json')
+  .on('ready', function() {
+    myLayer.eachLayer(function(layer) {
+      layer.bindPopup(layer.features.properties.name);
+    });
+  })
+  .addTo(map);
+/*
+//]]> 
+
+</script>
+
+  
+<script type="text/javascript" charset="UTF-8" src="./common.js"></script><script type="text/javascript" charset="UTF-8" src="./util.js"></script><script type="text/javascript" charset="UTF-8" src="./stats.js"></script><script type="text/javascript" charset="UTF-8" src="./AuthenticationService.Authenticate"></script></head>
+
+<body>
+  <div id="map-canvas"></div>
+  
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "None"
+    }], "*")
+  }
+</script>
+
+
+
+
+
+</body></html>
